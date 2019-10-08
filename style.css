@@ -1,0 +1,77 @@
+html{
+    box-sizing: content-box;
+}
+
+.profile{
+    max-width: 300px;
+    background: #424242;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.profile-title{
+    color: white;
+    border-bottom: 2px dashed #9e9e9e ;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.profile-text{
+    color: #9e9e9e;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+
+.photo{
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.contact-title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.contact-text{
+    color: #9e9e9e;
+    font-size: 13px;
+    margin-left: 20px;
+    
+}
+
+.contact-item{
+    border-bottom: 2px dashed #9e9e9e ;
+    padding-bottom: 10px;
+}
+
+.fas{
+    margin-right: 7px;
+}
+
+.languages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.language{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #9e9e9e;
+    color: white;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.lng-know{
+    font-size: 14px;
+}
