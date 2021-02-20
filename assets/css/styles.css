@@ -1,6 +1,15 @@
 /*-------------
  	General
 -------------*/
+	
+	/* #1a1b1e - background*/
+	/* #cdcdcd - кнопки на Header*/
+
+@font-face {
+    font-family: "JetBrainsMonoRegular";
+    src: url("../fonts/mono/ttf/JetBrainsMono-Regular.ttf");
+	font-style: normal;
+}
 
 *{
 	margin: 0;
@@ -9,8 +18,9 @@
 }
 
 html{
-	font: normal 16px sans-serif;
-	color: #555;
+	font: normal 16px 'JetBrainsMonoRegular';
+	color: #cdcdcd;
+	background-color:#1a1b1e;
 }
 
 ul, nav{
@@ -30,18 +40,18 @@ a:hover{
 }
 
 a.btn{
-	color: #fff;
+	color: #cdcdcd;
 	border-radius: 4px;
 	text-transform: uppercase;
-	background-color: #2196F3;
+	background-color: #3f4040;
 	font-weight: 800;
 	text-align: center;
 }
 
 hr{
-	width: 150px;
-	height: 2px;
-	background-color: #2196F3;
+	width: 300px;
+	height: 1px;
+	background-color:#cdcdcd;
 	border: 0;
 	margin-bottom: 80px;
 }
@@ -73,7 +83,7 @@ section{
 section h3.title{
 	color: #414a4f;
 	text-transform: capitalize; 
-	font: bold 32px 'Open Sans', sans-serif;
+	font: bold 32px 'JetBrainsMonoRegular';
 	margin-bottom: 35px;
 	text-align: center;
 }
@@ -107,12 +117,12 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	color: #fff;
+	color: #cdcdcd;
 	padding: 35px 100px 0;
 }
 
 header h2{
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'JetBrainsMonoRegular';
 }
 
 header nav{
@@ -153,10 +163,10 @@ header nav li:last-child{
 
 
 /*----------------
- 	Hero Section
+ 	Person Section
 ----------------*/
 
-.hero{
+.person{
 	position: relative;
 	justify-content: center;
 	min-height: 100vh;
@@ -164,57 +174,53 @@ header nav li:last-child{
 	text-align: center;
 }
 
-.hero .background-image{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-color: #2196F3;
-	z-index: -1;
+.person .background-image{
+	content:url("../img/photo_2.jpg");
+	border-radius: 100%;
+	border: 5px solid #cdcdcd;
+	width: 250px;
 }
 
-.hero .background-image:after{
+.person .background-image:after{
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #414a4f;
+	background-color: #1a1b1e;
 	opacity: 0.75;
 }
 
-.hero h1{
-	font: bold 60px 'Open Sans', sans-serif;
+.person h1{
+	font: bold 60px 'JetBrainsMonoRegular';
 	margin-bottom: 15px;
 }
 
-.hero h3{
-	font: normal 28px 'Open Sans', sans-serif;
+.person h3{
+	font: normal 28px 'JetBrainsMonoRegular';
 	margin-bottom: 40px;
 }
 
-.hero a.btn{
+.person a.btn{
 	padding: 20px 46px;
 }
 
 @media (max-width: 800px){
 
-	.hero{
+	.person{
 		min-height: 600px;
 	}
 
-	.hero h1{
+	.person h1{
 		font-size: 48px;
 	}
 
-	.hero h3{
+	.person h3{
 		font-size: 24px;
 	}
 
-	.hero a.btn{
+	.person a.btn{
 		padding: 15px 40px;
 	}
 
@@ -223,37 +229,59 @@ header nav li:last-child{
 
 
 /*--------------------
- 	Our Work Section
+ 	Projects Section
 ---------------------*/
 
-.оur-work{
-	background-color: #fff;
+.projects{
+	background-color: #1a1b1e;
 }
 
-.our-work .grid li{
-	padding: 20px;
-	height: 550px;
-	border-radius: 3px;
-
-	background-clip: content-box;
-	background-size: cover;
-	background-position: center;
-	background-color: #333;
+.projImages{
+display: flex;
+flex-direction: row;
 }
 
-.our-work .grid li.small{
+.img1{
+content:url("../img/img1.png");
+border-radius: 10%;
+border: 5px solid #cdcdcd;
+width: 350px;
+margin: 20px;
+}
+
+.img2{
+content:url("../img/img2.png");
+border-radius: 10%;
+border: 5px solid #cdcdcd;
+width: 350px;
+margin: 20px;
+}
+
+.img3{
+content:url("../img/img3.png");
+border-radius: 10%;
+border: 5px solid #cdcdcd;
+width: 350px;
+margin: 20px;
+}
+
+.projects .grid li.small{
 	flex-basis: 40%;
 }
 
-.our-work .grid li.large{
+.projects .grid li.medium{
+	flex-basis: 50%;
+}
+
+.projects .grid li.large{
 	flex-basis: 60%;
 }
 
 
 @media (max-width: 1000px){
 
-	.our-work .grid li.small,
-	.our-work .grid li.large{
+	.projects .grid li.small,
+	.projects .grid li.large{
 		flex-basis: 100%;
 	}
 
@@ -262,141 +290,55 @@ header nav li:last-child{
 
 
 /*----------------------
- 	Features Section
+ 	Skils Section
 ----------------------*/
 
-.features{
-	background-color: #f7f7f7;
+.skils{
+	background-color: #1a1b1e;
 }
 
-.features .grid li{
+.skils .grid li{
 	padding: 0 30px;
 	flex-basis: 33%;
 	text-align: center;
 }
 
-.features .grid li i{
+.skils .grid li i{
     font-size: 50px;
-    color: #2196F3;
+    color: #fff;
     margin-bottom: 25px;
 }
 
-.features .grid li h4{
-	color: #555;
+.skils .grid li h4{
+	color: #167dff;
     font-size: 20px;
     margin-bottom: 25px;
 }
 
-.features .grid li p{
+.skils .grid li p{
     margin: 0;
 }
 
 @media (max-width: 1000px){
 
-	.features .grid li{
+	.skils .grid li{
 		flex-basis: 70%;
 		margin-bottom: 65px;
 	}
 
-	.features .grid li:last-child{
+	.skils .grid li:last-child{
 		margin-bottom: 0;
 	}
 
 }
 
-
 @media (max-width: 600px){
 
-	.features .grid li{
+	.skils .grid li{
 		flex-basis: 100%;
 	}
 
 }
-
-
-
-/*--------------------
- 	Reviews Section
---------------------*/
-
-.reviews{
-	background-color: #fff;
-}
-
-.reviews .quote{
-	text-align: center;
-	width: 80%;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    padding: 0;
-}
-
-.reviews .author{
-    font-size: 18px;
-    margin-bottom: 50px;
-}
-
-.reviews .author:last-child{
-    margin-bottom: 0;
-}
-
-@media (max-width: 1000px){
-
-	.reviews .quote{
-		font-size: 20px;
-	}
-
-	.reviews .author{
-	    font-size: 16px;
-	}
-
-}
-
-
-
-/*---------------------
- 	Contact Section
----------------------*/
-
-.contact{
-	background-color: #f7f7f7;
-}
-
-.contact form{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-
-	max-width: 800px;
-	width: 80%;
-}
-
-.contact form input{
-	padding: 15px;
-	flex: 1;
-	margin-right: 30px;
-	font-size: 18px;
-	color: #555;
-}
-
-.contact form .btn{
-	padding: 18px 42px;
-}
-
-
-@media (max-width: 800px){
-
-	.contact form input{
-		flex-basis: 100%;
-		margin: 0 0 20px 0;
-	}
-
-}
-
-
 
 
 /*-------------
@@ -409,7 +351,7 @@ footer{
 	align-items: center;
 	text-align: center;
 	color: #fff;
-	background-color: #414a4f;
+	background-color: #1a1b1e;
 	padding: 60px 0;
 }
 
@@ -459,19 +401,19 @@ footer p a{
 
 
 div.scrollup {
-	position: fixed; /* фиксированная позиция */
-	color: #fff; /* цвет текста */
-	background-color: #286090; /* цвет заднего фона */
-	right: 20px; /* расстояние от правого края */
-	bottom: 0px; /* расстояние от нижнего края */
-	padding: 4px 10px; /* отступы до содержимого блока */
-	font-size: 20px; /* размер шрифта (иконки) */
-	border-top-left-radius: 4px; /* скругление верхнего левого угла */
-	border-top-right-radius: 4px; /* скругление верхнего правого угла */
-	cursor: pointer; /* форма курсора */
-	display: none; /* не отображать элемент */
-	text-align: center; /*выравнивание содержимого элемента по центру */
+	position: fixed; 					/* фиксированная позиция */
+	color: #fff; 					  /* цвет текста */
+	background-color: #286090; 		  /* цвет заднего фона */
+	right: 20px; 						/* расстояние от правого края */
+	bottom: 0px; 						/* расстояние от нижнего края */
+	padding: 4px 10px; 					/* отступы до содержимого блока */
+	font-size: 20px; 					/* размер шрифта (иконки) */
+	border-top-left-radius: 4px; 		/* скругление верхнего левого угла */
+	border-top-right-radius: 4px; 		/* скругление верхнего правого угла */
+	cursor: pointer; 					/* форма курсора */
+	display: none; 						/* не отображать элемент */
+	text-align: center; 				/*выравнивание содержимого элемента по центру */
   }
   div.scrollup:hover {
-	background-color: #000; /* цвет заднего фона при наведении */
+	background-color: #000; 		  /* цвет заднего фона при наведении */
   }

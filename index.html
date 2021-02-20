@@ -8,7 +8,8 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
@@ -16,104 +17,70 @@
 <body>
 
 	<header>
-		<h2><a href="#">AxNikita</a></h2>
+		<h2><a href="#" style="color: #9876aa;">AxNikita</a></h2>
 		<nav>
-			<li><a href="#projects">Проекты</a></li>
-			<li><a href="#skils">Навыки</a></li>
-			<li><a href="#reviews">Отзывы</a></li>
-			<li><a href="#contacts">Контакты</a></li>
+			<li><a href="#projects">ПРОЕКТЫ</a></li>
+			<li><a href="#skils">НАВЫКИ</a></li>
+			<li><a href="#contacts">КОНТАКТЫ</a></li>
 		</nav>
 	</header>
 
 
-	<section class="hero">
-		<div class="background-image" style="background-image: url(assets/img/hero.jpg);"></div>
+	<section class="person">
+		<div class="background-image"></div>
 		<h1>Kotov Nikita</h1>
-		<h3>Java Developer</h3>
+		<h3 style="color: #cc7832;">Java Developer</h3>
 		<a href="https://github.com/AxNikita" class="btn" target="_blank">Посмотреть GitHub</a>
 	</section>
 
-
 	
 	<a name="projects"></a>
-	<section class="our-work" name="projects">
-		<h3 class="title">Мои проекты</h3>
+	<section class="projects" name="projects">
+		<h3 class="title" style="color: #ffc66d;">Мои проекты</h3>
+		<h2 class="projName" style="color: #9876aa;">AxLeaf - твоя персональная статистика.</h3>
+		<br>
 		<i><p>"Несдержанность в мелочах погубит великое дело."</p></i>
 		<hr>
 
-		<ul class="grid">
-			<li class="small" style="background-image: url(assets/img/BrainUpSamsung.jpg);"></li>
-			<li class="large" style="background-image: url(assets/img/banner.png); height: 350px; margin-top: 20px;" ></li>
-			<!-- <li class="large" style="background-image: url(assets/img/15.jpg);"></li>
-			<li class="small" style="background-image: url(assets/img/mountain.jpg);"></li> -->
+		<div class="projImages">
+			<div class="img1"></div>
+			<div class="img2"></div>
+			<div class="img3"></div>
 		</div>
 
 	</section>
 	
 
 	<a name="skils"></a>
-	<section class="features">
-		<h3 class="title">Мои навыки</h3>
+	<section class="skils">
+		<h3 class="title" style="color: #ffc66d;">Мои навыки</h3>
 		<i><p>"Три пути ведут к знанию: путь размышления — это путь самый благородный, путь подражания — это путь самый легкий и путь опыта — это путь самый горький."</p></i>
 		<hr>
 
 		<ul class="grid">
 			<li>
-				<i class="fa fa-android"></i>
-				<h4>Android</h4>
-				<p>Разработка чистой архитектуры, использование современных подходов в лице Kotlin. Привлекательный дизайн и высокая производительность. Room, Retrofit, Coroutines, MVVM.</p>
-			</li>
-			<li>
-				<i class="fa fa-cubes"></i>
+				<i class="fa fa-server"></i>
 				<h4>Backend</h4>
-				<p>Построение Web приложений на базе Spring Framework. Security, Authorization, JWT, LDAP, PostgreSql, Lombok и Thymeleaf. Планирование серверной архитектуры при построении приложений.</p>
+				<p>Разработка высоконагруженных систем. Построение Web приложений на базе Spring Framework Thymeleaf. Spring Boot, Spring Security, Spring Data, Spring AOP, Spring Validation, JWT, LDAP. </p>
 			</li>
 			<li>
-				<i class="fa fa-file-code-o"></i>
-				<h4>Web</h4>
-				<p>Построение простых web-страниц используя Vue.js, стилизация приложений при помощи Bootstrap Framework.</p>
+				<i class="fab fa-android"></i>
+				<h4>Android</h4>
+				<p>Разработка чистой архитектуры. Внедрение языка Kotlin в существующие проекты. Разработка приложений с привлекательным дизайном и высокой производительностью. Room, Retrofit, Coroutines, MVVM.</p>
+			</li>
+			<li>
+				<i class="fab fa-docker"></i>
+				<h4>DevOps</h4>
+				<p>Работа с RedHat Linux Server, Windows Server. Система поиска Elasticsearch. Построение систем мониторинга на основе Grafana.</p>
 			</li>
 		</div>
 	</section>
 
-
-	<a name="reviews"></a>
-	<!--<section class="reviews">
-		<h3 class="title">Что говорят другие:</h3>
-
-		<p class="quote">Все сделано отлично и в срок!!! Человек широкого кругозора не пришлось ничего особо объяснять по довольно специфической теме работы.</p>
-		<p class="author">— Patrick Farrell</p>
-
-		<p class="quote">Работа была выполнена качественно и в сроки! спасибо.</p>
-		<p class="author">— George Smith</p>
-
-		<p class="quote">Отличный исполнитель, работы выполнена! В данный момент тестируем.</p>
-		<p class="author">— Kevin Blake</p>
-
-		
-	</section> -->
-
-
-	
-	<!-- <section class="contact">
-		<h3 class="title">Join our newsletter</h3>	
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
-		<hr>
-
-		<form>
-			<input type="email" placeholder="Email">
-			<a href="#" class="btn">Subscribe now</a>
-		</form>
-	</section> -->
-
 	<a name="contacts"></a>
 	<footer>
 		<ul>
-			<!-- <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li> -->
-			<li><a href="mailto:kotovnikita00744@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
-			<!-- <li><a href="https://vk.com/nik_ct_cent" target="_blank"><i class="fa fa-vk"></i></a></!-->
-			<li><a href="https://github.com/AxNikita" target="_blank"><i class="fa fa-github-square"></i></a></li>
+			<li><a href="mailto:kotovnikita00744@gmail.com"><i class="far fa-envelope"></i></a></li>
+			<li><a href="https://github.com/AxNikita" target="_blank"><i class="fab fa-github-square"></i></a></li>
 		</ul>
 		<p>AxNikita Projects</p>
 	</footer>
