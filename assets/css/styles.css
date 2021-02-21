@@ -175,7 +175,7 @@ header nav li:last-child{
 }
 
 .person .background-image{
-	content:url("../img/photo_2.jpg");
+	content:url("../img/profile_black.png");
 	border-radius: 100%;
 	border: 5px solid #cdcdcd;
 	min-width: 150px;
