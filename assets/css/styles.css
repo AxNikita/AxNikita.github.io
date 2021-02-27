@@ -56,6 +56,15 @@ hr{
 	margin-bottom: 80px;
 }
 
+.download{
+	color: #fff;
+	border-radius: 16px;
+	text-transform: uppercase;
+	background-color: #167dff;
+	font-weight: 800;
+	text-align: center;
+}
+
 section{
 	display: flex;
 	flex-direction: column;
@@ -243,6 +252,10 @@ header nav li:last-child{
 	text-align: center;
 }
 
+.projects a.download{
+	padding: 20px 92px;
+}
+
 .projImages{
 	display: flex;
 	flex-direction: row;
@@ -287,6 +300,10 @@ header nav li:last-child{
 
 	.img3{
 		width: 250px;
+	}
+
+	.projects a.download{
+		padding: 15px 80px;
 	}
 }
 
