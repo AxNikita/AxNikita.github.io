@@ -293,16 +293,16 @@ header nav li:last-child{
 /*----------------------
  	AxCookie
 ----------------------*/
-.axcookie-img1{
-	content:url("../img/axcookie-img1.png");
+.axcookie1{
+	content:url("../img/axcookie1.png");
 	border-radius: 10%;
 	border: 5px solid #cdcdcd;
 	width: 550px;
 	margin: 20px;
 }
 
-.axcookie-img2{
-	content:url("../img/axcookie-img2.png");
+.axcookie2{
+	content:url("../img/axcookie2.png");
 	border-radius: 10%;
 	border: 5px solid #cdcdcd;
 	width: 550px;
@@ -326,11 +326,11 @@ header nav li:last-child{
 		width: 250px;
 	}
 
-	.axcookie-img1{
+	.axcookie1{
 		width: 350px;
 	}
 
-	.axcookie-img2{
+	.axcookie2{
 		width: 350px;
 	}
 
