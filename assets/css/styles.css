@@ -261,6 +261,10 @@ header nav li:last-child{
 	flex-direction: row;
 }
 
+/*----------------------
+ 	AxLeaf
+----------------------*/
+
 .img1{
 	content:url("../img/img1.png");
 	border-radius: 10%;
@@ -285,6 +289,26 @@ header nav li:last-child{
 	margin: 20px;
 }
 
+
+/*----------------------
+ 	AxCookie
+----------------------*/
+.axcookie-img1{
+	content:url("../img/axcookie-img1.png");
+	border-radius: 10%;
+	border: 5px solid #cdcdcd;
+	width: 700px;
+	margin: 20px;
+}
+
+.axcookie-img2{
+	content:url("../img/axcookie-img2.png");
+	border-radius: 10%;
+	border: 5px solid #cdcdcd;
+	width: 700px;
+	margin: 20px;
+}
+
 @media (max-width: 1000px){
 	.projImages{
 		flex-direction: column;
@@ -300,6 +324,14 @@ header nav li:last-child{
 
 	.img3{
 		width: 250px;
+	}
+
+	.axcookie-img1{
+		width: 350px;
+	}
+
+	.axcookie-img2{
+		width: 350px;
 	}
 
 	.projects a.download{
